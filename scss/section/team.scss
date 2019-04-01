@@ -1,0 +1,123 @@
+.team {
+    background: url('../img/bg/team-bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__section {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: rgba($dark, .93);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets {
+        width: 100%;
+    }
+}
+.team-acco{
+    width:rem(350px);
+}
+.team__content {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include tablets {
+        text-align: center;
+    }
+}
+
+.section__title-team {
+    margin-bottom: rem(55px);
+}
+
+.team-acco__item {
+    margin-bottom: rem(35px);
+
+    .team__acco__title {
+        @include tablets {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &.active {     
+        .team__acco__title:before {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.team__acco__content {
+    display: none;
+    overflow: hidden;
+
+    @include tablets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.team__acco__title {
+    font-style: rem(14px);
+    margin-bottom: rem(10px);
+    font-family: 'Gagalin';
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border: rem(9px) solid transparent;
+        border-top-color: $yellow;
+        border-bottom: none;
+        margin-right: rem(10px);
+    }
+}
+.team__acco__image,.team__acco__desc{
+    display: inline-block;
+    vertical-align: middle;
+}
+.team__acco__occ {
+    font-family: 'Ubuntu';
+    color: #fff;
+    font-weight: bold;
+    font-size: rem(14px);
+    margin-bottom: rem(20px);
+}
+
+.team__acco__desc {
+    color: #fff;
+    font-family: 'Ubuntu';
+    font-size: rem(14px);
+    margin-left: rem(20px);
+    width: rem(210px);
+}
+
+.team__acco__avatar {
+    width: rem(100px);
+    height: rem(100px);
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+}
+
+.team__acco__avatar-pic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+}

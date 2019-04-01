@@ -1,0 +1,28 @@
+$orange:#e45028;
+$yellow: #f9b43b;
+$green:#8ac03e;
+$dark:#2f3234;
+// resolution
+$desktop: 1200px;
+$laptops: 992px;
+$tablets: 768px;
+$phones: 480px;
+// media
+@import "media";
+// config
+@import "config/mixins";
+// layout
+@import "layout/fonts";
+@import "layout/base";
+@import "layout/adjustment";
+// section
+@import "section/hero";
+@import "section/best";
+@import "section/burgers";
+@import "section/team";
+@import "section/reviews";
+@import "section/order";
+@import "section/menu";
+@import "section/map";
+@import "fixed-menu";
+@import "footer";

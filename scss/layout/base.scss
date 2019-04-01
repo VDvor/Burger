@@ -1,0 +1,59 @@
+html{
+    @include tablets{
+        font-size: rem(15px);
+    }
+    @include phones{
+        font-size: rem(13px);
+    }
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gagalin';
+    line-height: 1.42;
+    color: $dark;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    bottom: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+b {
+    font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    margin: 0;
+}

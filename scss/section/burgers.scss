@@ -1,0 +1,114 @@
+.burgers {
+    background: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
+  }
+  
+ .burgers__container{
+   height: 100%;
+   display: flex;
+   flex-direction: row ;
+   align-items: center;
+   justify-content: center;
+
+ }
+  .burger-imgs{position: relative;
+    height: rem(475px);
+    width: rem(455px);
+    background: url(../img/Slider/dark-beef.png) 50% 50% no-repeat;
+    flex-grow: 1;
+  }
+  .burger-calories{
+    width: rem(90px);
+    height: rem(90px);
+    background: #f08c33;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: rem(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+  }
+  .burger-calories__img{
+    width:rem(45px);
+    height: rem(40px);
+    fill: #fff;
+    margin-bottom: rem(10px);
+  }
+  .burger-calories__text{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Gagalin';
+  }
+  .burger-consist{
+    width: rem(65px);
+    height: rem(75px);
+    position: absolute;
+    bottom:0;
+    left: 0;
+    fill: #f7c47f;
+    
+  }
+  .burger-consist__number{
+    display: block;
+    position: relative;
+    color: #f7c47f;
+    
+  }
+  .burger-text{
+    height: rem(475px);
+    width: rem(445px);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+   justify-content: center;
+  }
+  .burger-content{
+    display: flex;
+   flex-direction: row ;
+   flex-grow: 1;
+   justify-content: center;
+  }
+  .burger-caption{
+    align-self:flex-start;
+    color: #fff;
+    font-family: 'Gagalin';
+    font-size: rem(72px);
+  margin-bottom: rem(55px);
+  }
+ .burger-description{
+  color: #fff;
+  font-family: 'Ubuntu';
+  font-size: rem(14px);
+  margin-bottom: rem(40px);
+ }
+ .burger-info{
+  width: 100%;
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+   justify-content: flex-start;
+ }
+ .burger-price{
+  font-family: 'Gagalin';
+  font-size: rem(72px);
+  color: $orange;
+  margin-right: rem(30px);
+ }
+ .burger-arrow{
+   width: rem(25px);
+   height: rem(30px);
+   fill: #fff;
+  
+ }
+ .prev{
+  margin-right: rem(45px) ;
+  margin-left: rem(40px) ;
+  transform: rotate(90deg);
+ }
+ .next{
+  margin-right: rem(40px) ;
+  margin-left:  rem(45px);
+  transform: rotate(-90deg);
+ }

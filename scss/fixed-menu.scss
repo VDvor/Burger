@@ -1,0 +1,40 @@
+.fixed-menu{
+    position: fixed;
+    top: rem(80px);
+    right: rem(45px);
+    @include tablets{
+        display: none;
+    }
+    @include phones{
+        display: none;
+    }
+}
+.fixed-menu__item{
+    margin-bottom: rem(10px);
+    &.active{
+        .fixed-menu__link{
+            border-color: #fff;
+        }
+
+    }
+}
+.fixed-menu__link{
+    width: rem(16px);
+    height: rem(16px);
+    border-radius: 50%;
+    border: 1px solid transparent;
+    position: relative;
+    display: block;
+    &:hover {
+       border-color: #fff; 
+    }
+    &::before{
+        content: "";
+        display: block;
+       @include circle (4px,#fff);
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+    }
+}
